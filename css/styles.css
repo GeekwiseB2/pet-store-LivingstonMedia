@@ -19,8 +19,13 @@
 .nav-pills>li.active>a {
   background-color: #FF827B;
 }
+.nav-pills>li.active>a:hover {
+  background-color: #FF5B52;
+  color: white;
+}
 .nav-pills>li>a:hover {
-    background-color: #FFE0DE;
+  background-color: #FF5B52;
+  color: white;
 }
 .header ul {
   display: inline-block;
@@ -75,6 +80,9 @@ footer {
 }
 footer a {
   color: #999;
+}
+footer a:hover {
+  color: #FF827B;
 }
 footer .border {
   border-left: 1px solid #333;
