@@ -12,15 +12,30 @@
   font-family: 'Satisfy', cursive;
   color: #FF827B;
   font-size: 40px;
-  max-width: 400px;
+  max-width: 200px;
   display: inline-block;
   position: absolute;
 }
-.nav-pills>li>a {
+.nav-pills>li.active>a {
+  background-color: #FF827B;
+}
+.nav-pills>li.active>a:hover {
+  background-color: #FF5B52;
+  color: white;
+}
+.nav-pills>li>a:hover {
+  background-color: #FF5B52;
+  color: white;
+}
+.header ul {
+  display: inline-block;
+  position: relative;
+  margin-top: 20px;
+}
+.nav a {
   font-family: 'Open Sans', sans-serif;
   color: #61AEE6;
   font-size: 24px;
-  margin-bottom: 10px;
 }
 .jumbotron {
   background-image: url('../img/hero.jpg');
@@ -66,10 +81,27 @@ footer {
 footer a {
   color: #999;
 }
+footer a:hover {
+  color: #FF827B;
+}
 footer .border {
   border-left: 1px solid #333;
 }
 footer .copyright {
   color: #444;
   font-size: 18px;
+}
+.map {
+  position: relative;
+  padding-bottom: 75%; // This is the aspect ratio
+  height: 0;
+  overflow: hidden;
+}
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  pointer-events: none;
 }
