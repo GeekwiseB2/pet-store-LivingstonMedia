@@ -12,15 +12,25 @@
   font-family: 'Satisfy', cursive;
   color: #FF827B;
   font-size: 40px;
-  max-width: 400px;
+  max-width: 200px;
   display: inline-block;
   position: absolute;
 }
-.nav-pills>li>a {
+.nav-pills>li.active>a {
+  background-color: #FF827B;
+}
+.nav-pills>li>a:hover {
+    background-color: #FFE0DE;
+}
+.header ul {
+  display: inline-block;
+  position: relative;
+  margin-top: 20px;
+}
+.nav a {
   font-family: 'Open Sans', sans-serif;
   color: #61AEE6;
   font-size: 24px;
-  margin-bottom: 10px;
 }
 .jumbotron {
   background-image: url('../img/hero.jpg');
@@ -72,4 +82,18 @@ footer .border {
 footer .copyright {
   color: #444;
   font-size: 18px;
+}
+.map {
+  position: relative;
+  padding-bottom: 75%; // This is the aspect ratio
+  height: 0;
+  overflow: hidden;
+}
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  pointer-events: none;
 }
